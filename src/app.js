@@ -1,19 +1,22 @@
 const express = require('express')
 const app = express()
 const { default: rateLimit } = require('express-rate-limit')
+const UserRouter = require('./router/userRouter')
 
-const limiter = rateLimit({
-    windowMs: 1 * 60 * 1000,
-    limit: 5, 
-    standardHeaders: 'draft-8',
-    legacyHeaders: false,
-    ipv6Subnet: 56, 
-    message : "eto bar keno bhai"
-})
+app.use("/api/user",UserRouter)
 
-app.get('/', limiter, (req, res) => {
-  res.send('Hello Worldss!')
-})
+// const limiter = rateLimit({
+//     windowMs: 1 * 60 * 1000,
+//     limit: 5, 
+//     standardHeaders: 'draft-8',
+//     legacyHeaders: false,
+//     ipv6Subnet: 56, 
+//     message : "eto bar keno bhai"
+// })
+
+// app.get('/api/user', limiter, (req, res) => {
+//   res.send('Hello Worldss!')
+// })
 
 
 
