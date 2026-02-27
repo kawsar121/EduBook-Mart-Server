@@ -1,0 +1,25 @@
+{
+  "name": "edubook_mart_server",
+  "version": "1.0.0",
+  "description": "EduBook Mart is a MERN Stack based web application designed for students to buy and sell new and used books easily. This platform helps students save money by exchanging books within the student community.",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawsar121/EduBook-Mart-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kawsar121/EduBook-Mart-Server/issues"
+  },
+  "homepage": "https://github.com/kawsar121/EduBook-Mart-Server#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1"
+  }
+}
